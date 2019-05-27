@@ -1,5 +1,5 @@
 <template>
-  <nav class="menu">
+  <nav v-if="windowWidth >= 999" class="menu">
     <div
       v-for="(item, index) in menu"
       :key="index"
@@ -43,6 +43,7 @@
       </div>
     </transition>
   </nav>
+  <nav v-else class="menu-mobile"></nav>
 </template>
 
 <script>
@@ -50,6 +51,7 @@ export default {
   name: 'HeaderNavigationMenu',
   data() {
     return {
+      windowWidth: 0,
       categorySelected: null,
       categoryPosts: null,
       menu: [
@@ -113,7 +115,14 @@ export default {
       ]
     }
   },
+  mounted() {
+    window.addEventListener('resize', this.updateWidth)
+    this.updateWidth()
+  },
   methods: {
+    updateWidth() {
+      this.windowWidth = window.innerWidth
+    },
     selectCategory(index) {
       if (!this.menu[index].children) return false
 
@@ -134,7 +143,18 @@ export default {
   padding: 0 50px;
   /*position: relative;*/
 }
-
+.menu-mobile {
+  background: #f14b13
+    url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNyAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48bGluZSB4MT0iMS41IiB5MT0iMS41IiB4Mj0iMjUuNSIgeTI9IjEuNSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48bGluZSB4MT0iMS41IiB5MT0iMTIuNSIgeDI9IjI1LjUiIHkyPSIxMi41IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxsaW5lIHgxPSIxLjUiIHkxPSIyMi41IiB4Mj0iMjUuNSIgeTI9IjIyLjUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+')
+    no-repeat center;
+  width: 46px;
+  height: 38px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.menu-mobile:hover {
+  background-color: #ef3b00;
+}
 .item {
   display: flex;
   align-items: center;
