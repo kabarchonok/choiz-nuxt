@@ -205,6 +205,7 @@ export default {
   background: #f3f7fa;
   box-shadow: inset 6px 10px 13px rgba(255, 92, 0, 0.28);
   position: relative;
+  height: 100%;
 }
 .dropdown__children {
   padding: 40px 70px;
