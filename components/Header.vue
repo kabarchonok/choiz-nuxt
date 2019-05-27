@@ -78,13 +78,17 @@ export default {
 }
 @media (max-width: 999px) {
   .header {
-    padding: 0 20px;
+    padding: 10px 20px;
   }
   .header__wrapper {
     padding: 0;
   }
+  .search {
+    display: none;
+  }
   .account {
     margin-right: 0;
+    display: none;
   }
 }
 </style>

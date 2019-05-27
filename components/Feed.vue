@@ -18,6 +18,79 @@
         Women-only «Wonder Woman» screenings were almost stupidly nice
       </div>
       <img src="~/static/feed-thumbnail.png" class="post__thumbnail" />
+      <div class="post__content">
+        <p>
+          It might have looked different in other parts of the country, but at
+          New York's Alamo Drafthouse in Brooklyn, the first "Wonder Woman with
+          Wonder Women" screening had not a naysayer in sight.
+        </p>
+
+        <p>
+          When Drafthouse first announced the nationwide screenings for anyone
+          who identifies as a woman, a reliable subsection of the internet was
+          up in arms.
+        </p>
+
+        <p>
+          "Their panties were very twisted," lifelong Wonder Woman fan Anna
+          Davenport told Mashable at the New York screening. She couldn't
+          suppress a smile.
+        </p>
+
+        <p>
+          Davenport was born in 1971 and grew up with Wonder Woman and the
+          Bionic Woman — the only female superheroes who were beacons
+          nonetheless.
+        </p>
+
+        <p>
+          "It’s been a long time coming actually, kinda like why the hell is it
+          taking so long," Davenport says. "But it tends to roll that way. If
+          you’re not a rich white guy who’s looking to save the world, nobody
+          tends to want to hear you."
+        </p>
+
+        <p>
+          A few bitter men did everything from emailing Drafthouse to swarming
+          its social media to even tracking down contact information of
+          management and sending them direct personal messages. Funnily enough,
+          the only in-person complains at the New York location were from women
+          who wanted to attend one of the screenings but couldn't, as all of
+          them rapidly sold out.
+        </p>
+
+        <p>
+          "If equality was actually a thing, we wouldn’t need to do women-only
+          screenings," says Marsha August, who attended the screening with her
+          sister and friend. "And if you’re saying a men’s only screening...um,
+          men already get everything they want. That’s the whole point. So maybe
+          figure out how the world works before you start bitching on the
+          internet."
+        </p>
+
+        <p>
+          "I feel like they shouldn’t be making decisions about our healthcare
+          that don’t involve us, so getting to see a movie without them is a
+          slight perk compared to the fact that they make more money than we do
+          and they have more rights than we do," says Jessica Plummer, who
+          bought six tickets and then rallied her "lady friends" for the
+          screening.
+        </p>
+
+        <p>
+          None of the women present had any time for the ire of male voices on
+          the internet, and neither did the men — a group of male moviegoers
+          present for another screening laughed out loud at the notion that
+          other men were upset about women seeing a movie.
+        </p>
+
+        <p>
+          "It’s not like there are no mixed screenings happening," said Charo
+          Henriquez. "This movie opened last week. If you want to go see the
+          movie there’s nothing impeding you from seeing it — this is just
+          something special."
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -77,6 +150,10 @@ export default {
 .post__thumbnail {
   display: block;
   width: 100%;
+  margin-bottom: 40px;
+}
+.post__content p {
+  margin-bottom: 10px;
 }
 @media (min-width: 1000px) {
   .feed::-webkit-scrollbar {

@@ -40,4 +40,9 @@ export default {
   bottom: 0;
   margin: auto;
 }
+@media (max-width: 999px) {
+  .lang {
+    order: -1;
+  }
+}
 </style>

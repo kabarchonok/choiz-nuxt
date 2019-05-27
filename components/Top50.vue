@@ -1,5 +1,5 @@
 <template>
-  <div v-if="width >= 999" class="top50">
+  <div v-if="windowWidth >= 999" class="top50">
     <div class="top50__pin"></div>
     <div class="top50__inner">
       <div class="icon"></div>
@@ -142,7 +142,7 @@ export default {
   name: 'Top50',
   data() {
     return {
-      width: 0
+      windowWidth: 0
     }
   },
   mounted() {
@@ -151,7 +151,7 @@ export default {
   },
   methods: {
     updateWidth() {
-      this.width = window.innerWidth
+      this.windowWidth = window.innerWidth
     }
   }
 }
