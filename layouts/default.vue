@@ -11,7 +11,7 @@ body,
 }
 html {
   font-family: Roboto, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #303030;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

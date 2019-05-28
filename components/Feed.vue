@@ -130,6 +130,7 @@ export default {
   align-items: center;
   line-height: 16px;
   margin-right: 30px;
+  cursor: pointer;
 }
 .post__source-icon {
   margin-right: 7px;
@@ -186,9 +187,10 @@ export default {
 }
 @media (max-width: 999px) {
   .feed {
-    padding: 70px 20px 70px 20px;
+    padding: 20px;
     margin-right: 0;
     overflow: auto;
+    height: auto;
   }
 }
 </style>
