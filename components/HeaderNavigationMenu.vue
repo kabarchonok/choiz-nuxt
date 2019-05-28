@@ -1,5 +1,5 @@
 <template>
-  <nav v-if="windowWidth >= 999" class="menu">
+  <nav class="menu">
     <div
       v-for="(item, index) in menu"
       :key="index"
@@ -43,7 +43,6 @@
       </div>
     </transition>
   </nav>
-  <nav v-else class="menu-mobile"></nav>
 </template>
 
 <script>
@@ -51,7 +50,6 @@ export default {
   name: 'HeaderNavigationMenu',
   data() {
     return {
-      windowWidth: 0,
       categorySelected: null,
       categoryPosts: null,
       menu: [
@@ -115,14 +113,7 @@ export default {
       ]
     }
   },
-  mounted() {
-    window.addEventListener('resize', this.updateWidth)
-    this.updateWidth()
-  },
   methods: {
-    updateWidth() {
-      this.windowWidth = window.innerWidth
-    },
     selectCategory(index) {
       if (!this.menu[index].children) return false
 
@@ -188,14 +179,14 @@ export default {
   left: 0;
   right: 0;
   position: absolute;
-  top: 65px;
+  top: 68px;
 }
 .dropdown__overlay {
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
-  top: 68px;
+  top: 72px;
   margin: auto;
   background: rgba(0, 0, 0, 0.8);
   cursor: pointer;
