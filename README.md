@@ -1,6 +1,6 @@
 # choiz-nuxt
 
-> My splendiferous Nuxt.js project
+## [Demo](https://vanya.xyz/choiz-nuxt/)
 
 ## Build Setup
 
