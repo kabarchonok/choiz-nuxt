@@ -10,7 +10,7 @@ export default {
   
   router: {
     base: '/choiz-nuxt/'
-  }
+  },
 
   /*
    ** Headers of the page
