@@ -1,5 +1,7 @@
 # choiz-nuxt
 
+![Preview](preview.png)
+
 ## [Demo](https://vanya.xyz/choiz-nuxt/)
 
 ## Build Setup
